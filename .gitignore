@@ -1,0 +1,14 @@
+# slides
+*.toc
+*.synctex.gz
+*.snm
+*.run.xml
+*.out
+*.nav
+*.log
+*.blg
+*.bbl
+*.aux
+slides/slides-blx.bib
+slides/*.pdf
+.vscode

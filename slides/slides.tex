@@ -1,0 +1,198 @@
+%\documentclass{beamer}
+%\usepackage[utf8]{inputenc}
+%\usetheme{Madrid} % here change color.
+% \usecolortheme{beaver}
+
+\documentclass[xcolor=dvipsnames, compress, 10pt]{beamer}
+\mode<presentation> {
+	\usefonttheme{default}
+	\usetheme{Ilmenau}
+	\usecolortheme{default}
+	%  	\usecolortheme{beaver}
+
+
+	\defbeamertemplate*{headline}{miniframes theme no subsection}
+	{%
+		\begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+		\end{beamercolorbox}
+		\begin{beamercolorbox}{section in head/foot}
+			\vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+		\end{beamercolorbox}
+	}
+
+
+	\defbeamertemplate*{footline}{myminiframes theme}
+	{%
+		\begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+			leftskip=.3cm,rightskip=.3cm plus1fil]{}%
+			%{\usebeamerfont{title in head/foot}\insertshorttitle\hfill \insertshortinstitute}
+			{\usebeamerfont{title in head/foot}\hfill \insertframenumber/\inserttotalframenumber}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+		\end{beamercolorbox}
+	}
+
+	\setbeamertemplate{itemize items}[circle]
+	\setbeamertemplate{enumerate items}[default]
+	\setbeamerfont{caption}{size=\scriptsize}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\setbeamertemplate{subsection in toc}[subsections numbered]
+	\setbeamertemplate{caption}[numbered]
+	\setbeamertemplate{footline}[miniframes theme no subsection]
+
+	\setbeamertemplate{bibliography entry title}{}
+	\setbeamertemplate{bibliography entry location}{}
+	\setbeamertemplate{bibliography entry note}{}
+	\setbeamercolor{bibliography entry author}{fg=black}
+	\setbeamercolor{bibliography entry location}{fg=black}
+	\setbeamercolor{bibliography entry note}{fg=black}
+}
+
+
+\usepackage{graphicx,epsf,subfigure}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,verbatim,booktabs,longtable,multirow,lscape}
+\usepackage{enumerate, color, url}
+\usepackage{dsfont,ctable}
+\usepackage{setspace}
+\usepackage{algorithm}
+\usepackage{kotex}
+\usepackage{adjustbox}
+\usepackage{afterpage}
+%\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false, urlcolor=blue}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{epsfig}
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{setspace} % \begin{spacing}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+\usepackage{mathtools}
+\usepackage{makecell}
+
+
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\bibliography{refs}
+
+
+% \newcommand{\bb}{\bm{b}}
+% \newcommand{\bc}{\bm{c}}
+% \newcommand{\bC}{\bm{C}}
+% \newcommand{\bD}{\bm{D}}
+% \newcommand{\bt}{\bm{t}}
+% \newcommand{\bw}{\bm{w}}
+% \newcommand{\bv}{\bm{v}}
+% \newcommand{\bu}{\bm{u}}
+% \newcommand{\bX}{\bm{X}}
+% \newcommand{\bM}{\bm{M}}
+% \newcommand{\bZ}{\bm{Z}}
+% \newcommand{\hH}{\hat{H}}
+% \newcommand{\bmu}{\bm{\mu}}
+% \newcommand{\bxi}{\bm{\xi}}
+% \newcommand{\bbeta}{\bm{\beta}}
+% \newcommand{\blambda}{\bm{\lambda}}
+% \newcommand{\btheta}{\bm{\theta}}
+% \newcommand{\bgamma}{\bm{\gamma}}
+% \newcommand{\bpi}{\bm{\pi}}
+% \newcommand{\bphi}{\bm{\phi}}
+% \newcommand{\bPhi}{\bm{\Phi}}
+% \newcommand{\bpsi}{\bm{\psi}}
+% \newcommand{\bthetah}{\hat{\bm{\theta}}}
+% \newcommand{\bSigma}{\bm{\Sigma}}
+% \newcommand{\bSigmah}{\widehat{\bm{\Sigma}}}
+% \newcommand{\bOmega}{\bm{\Omega}}
+% \newcommand{\CPO}{\text{CPO}}
+% \newcommand{\LPML}{\text{LPML}}
+% \newcommand{\as}{\text{ as }}
+% \newcommand{\var}{\mbox{Var}}
+% \newcommand{\cov}{\mbox{Cov}}
+% \newcommand{\diag}{\mbox{Diag}}
+
+\newcommand{\gtheta}{g(\bm{\theta})}
+\newcommand{\gthetah}{g(\hat{\bm{\theta}})}
+
+\newcommand{\sigbeta}{\sigma_{\beta}}
+\newcommand{\siglamb}{\sigma_{\lambda_0}}
+\def\code#1{\texttt{#1}}
+
+
+\allowdisplaybreaks[0]
+
+
+\title{Generating Networks with Predetermined Assortativity Measures}
+
+\author{Yelie Yuan \\
+Department of Statistics, University of Connecticut }
+\date{\today}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+	\frametitle{Overview}
+	\tableofcontents
+\end{frame}
+
+%------------------------------------------------
+
+\section{Background}
+
+\begin{frame}{Networks}
+
+	
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Undirected Networks}
+
+	
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Assortativity}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Degree-Preserving Rewiring}
+
+\begin{frame}{Rewiring}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Convex Optimization}
+
+\begin{frame}{Problem Setup}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[shrink=20]{References}
+	\nocite{Wang2022generating}
+	\nocite{Rpkg:wdnet}
+	\printbibliography[heading=none]
+\end{frame}
+
+%------------------------------------------------
+
+\end{document}
