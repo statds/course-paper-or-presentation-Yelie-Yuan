@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.75]
+    \draw[fill = gray!20] (-5, 0) ellipse (1.6 and 1) ;
+    \draw (-4.2, 0) node[draw = black, circle, minimum 
+    size =
+    0.8cm, fill = blue!20] (i1)	{$i$} ;
+    \draw (-3.5, -1.5) node[draw = black, circle, 
+    minimum 
+    size = 0.8cm] (u1)	{$u$} ;
+    \draw[-latex, thick] (u1) -- (i1) ;
+    \draw[fill = gray!20] (0, 0) ellipse (1.6 and 1) ;
+    \draw (-0.8, 0) node[draw = black, circle, minimum 
+    size =
+    0.8cm, fill = blue!20] (i2)	{$i$} ;
+    \draw (0.8, 0) node[draw = black, circle, minimum 
+    size = 0.8cm, fill = blue!20] (j1)	{$j$} ;
+    \draw[-latex, thick] (j1) -- (i2) ;
+    \draw[fill = gray!20] (5, 0) ellipse (1.6 and 1) ;
+    \draw (4.2, 0) node[draw = black, circle, minimum 
+    size =
+    0.8cm, fill = blue!20] (j2)	{$j$} ;
+    \draw (3.5, -1.5) node[draw = black, circle, minimum 
+    size = 0.8cm] (u2)	{$u$} ;
+    \draw[-latex, thick] (j2) -- (u2) ;
+\end{tikzpicture}

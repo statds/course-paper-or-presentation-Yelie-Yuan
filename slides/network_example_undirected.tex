@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+    \draw (0, 0) node[draw = black, circle] (v1) {$v_1$};
+    \draw (1.5, 0) node[draw = black, circle] (v2) {$v_2$};
+    \draw (0, -1.5) node[draw = black, circle] (v3) {$v_3$};
+    \draw (1.5, -1.5) node[draw = black, circle] (v4) {$v_4$};
+    \draw[thick, red] (v1) -- (v2);
+    \draw[thick] (v1) -- (v4);
+    \draw[thick] (v2) -- (v4);
+    \draw[thick] (v3) -- (v4);
+\end{tikzpicture}

@@ -9,6 +9,10 @@
 *.blg
 *.bbl
 *.aux
+*.bcf
 slides/slides-blx.bib
 slides/*.pdf
 .vscode
+
+references/*
+notes.md
