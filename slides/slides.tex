@@ -308,7 +308,7 @@ By definition, we have
 \begin{frame}{Assortativity}
 
 Assortativity is a metric measuring the tendency that nodes in a network are
-connected to vertices with similar node-specific characteristics, for example,
+connected to others with similar characteristics, for example,
 node degrees.
 
 \vspace{0.1cm}
@@ -575,6 +575,7 @@ network $G(V, E)$.
 
 \end{frame}
 
+
 %------------------------------------------------
 
 \begin{frame}{Properties}
@@ -692,8 +693,8 @@ generated independently.
 
 Fix $n = 1000$, and set $p \in \{0.05, 0.1, 0.2, 0.4\}$. The target 
 assortativity
-values are given by $r^*(1, 1) = 0.6$, $r^*(1, 2) = 0.5$, 
-$r^*(2, 1) = -0.4$ and $r^*(2, 2) = -0.3$. 
+values are given by $r^*(out, out) = 0.6$, $r^*(out, in) = 0.5$, 
+$r^*(in, out) = -0.4$ and $r^*(in, in) = -0.3$. 
 For each combination of $n$ and $p$, we
 generate $100$ independent networks. Each rewiring iteration contains
 $10^4$ rewiring steps.
